@@ -1,3 +1,9 @@
+'use strict';
+
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+
 let itens = [];
 
 function newItem(id, col1, col2, col3, col4) {
@@ -23,6 +29,8 @@ itens.push(newItem('1, 015','sodales','ligula','in','libero'));
 
 function populateTable() {
     let myTable = document.getElementById('my-table');
+    if(!myTable)
+        console.error('table not found!');
     let tbody = document.createElement('tbody');
     populateTbody(tbody);
     myTable.append(tbody);
@@ -48,4 +56,6 @@ function createTd(content) {
     return td;
 }
 
-window.onload = populateTable;
+window.onload = function (params) {
+    populateTable();
+}
