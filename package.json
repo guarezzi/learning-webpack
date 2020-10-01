@@ -1,0 +1,23 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "Projeto para aprender a aplicação do webpack numa estrutura de frontend simples.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guarezzi/webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guarezzi/webpack/issues"
+  },
+  "homepage": "https://github.com/guarezzi/webpack#readme",
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "jquery": "^1.12.4"
+  }
+}
