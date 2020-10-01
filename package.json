@@ -1,5 +1,6 @@
 {
-  "name": "webpack",
+  "name": "learning-webpack",
+  "private": true,
   "version": "1.0.0",
   "description": "Projeto para aprender a aplicação do webpack numa estrutura de frontend simples.",
   "main": "index.js",
