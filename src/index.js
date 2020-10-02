@@ -1,5 +1,3 @@
-'use strict';
-
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -30,7 +28,7 @@ itens.push(newItem('1, 015','sodales','ligula','in','libero'));
 function populateTable() {
     let myTable = document.getElementById('my-table');
     if(!myTable)
-        console.error('table not found!');
+        return console.error('table not found!');
     let tbody = document.createElement('tbody');
     populateTbody(tbody);
     myTable.append(tbody);
@@ -45,7 +43,7 @@ function populateTbody(tbody) {
 }
 
 function populateTr(tr, item) {
-    for (key in item) {
+    for (let key in item) {
         tr.append(createTd(item[key]));
     }
 }
@@ -56,6 +54,5 @@ function createTd(content) {
     return td;
 }
 
-window.onload = function (params) {
-    populateTable();
-}
+
+window.onload = populateTable;
