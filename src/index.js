@@ -26,6 +26,9 @@ itens.push(newItem('1, 014','per','inceptos','himenaeos','Curabitur'));
 itens.push(newItem('1, 015','sodales','ligula','in','libero'));
 
 function populateTable() {
+    let test = `testando minha API: ${SERVICE_URL}`;
+    console.info(test);
+
     let myTable = document.getElementById('my-table');
     if(!myTable)
         return console.error('table not found!');
@@ -53,6 +56,5 @@ function createTd(content) {
     td.textContent = content;
     return td;
 }
-
 
 window.onload = populateTable;
