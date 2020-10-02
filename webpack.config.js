@@ -17,11 +17,11 @@ plugins.push(new webpack.ProvidePlugin({
 
 plugins.push(new htmlWebpackPlugins({
     hash: true,
-    // minify: {
-    //     html5: true,
-    //     collapseWhitespace: true,
-    //     removeComments: true
-    // },
+    minify: {
+        html5: true,
+        collapseWhitespace: true,
+        removeComments: true
+    },
     filename: 'index.html',
     template: __dirname + '/src/index.html'
 }));
